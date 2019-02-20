@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        var firstFunc = function(){
+            console.log("Hello World");
+        };
+
+        function secondFunc(par){
+            par()
+        }
+
+        firstFunc();
+        secondFunc(firstFunc);
+
+        var student = {
+            name: "Sahan",
+            age:22,
+            fee:function(){
+                console.log("Rs.150,000");
+            }
+        };
+
+        console.log(student.name);
+        console.log(student.fee());
+        console.log(student.age)
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
